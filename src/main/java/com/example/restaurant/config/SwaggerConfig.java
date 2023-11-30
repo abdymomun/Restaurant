@@ -1,4 +1,4 @@
-package com.example.demo.security;
+package com.example.restaurant.config;
 
 import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class SwaggerConfig {
     @Bean
     public OpenAPI openAPI() {
-        Info info = new Info().title("hrSystem");
+        Info info = new Info().title("Restaurant");
 
         SecurityRequirement bearerTokenSecurityRequirement =
                 new SecurityRequirement().addList("Bearer Authentication");
